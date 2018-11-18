@@ -1,9 +1,5 @@
 'fileTypes': [
-  'md.j2',
-  'markdown.j2',
-  'jinja',
-  'jinja2',
-  'j2'
+  'md'
 ]
 'firstLineMatch': '^{% extends ["\'][^"\']+["\'] %}'
 'name': 'Markdown (Jinja Templates)'
