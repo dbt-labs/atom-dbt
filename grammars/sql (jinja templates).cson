@@ -1,3 +1,10 @@
+# Adapted from https://github.com/atom/language-sql/blob/master/grammars/sql.cson
+# Summary of changes:
+# * scopeName, name, fileTypes edited
+# * jinja included as a pattern
+# This was done this way since SQL includes $self wthin `()` patterns, so jinja
+# had to be imported to SQL.
+
 'scopeName': 'source.sql.jinja'
 'name': 'SQL (Jinja Templates)'
 'fileTypes': [

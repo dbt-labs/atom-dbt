@@ -1,3 +1,7 @@
+# Adapted from https://github.com/danielchatfield/atom-jinja2/blob/master/snippets/atom-jinja2.cson
+# Summary of changes:
+# * dbt-specific snippets added.
+
 '.source.jinja, .text.html.jinja, .text.generic-config.jinja, .source.python.jinja, .source.shell.jinja, .text.xml.jinja, .source.yaml.jinja, .source.sql.jinja':
   'Block':
     'prefix': 'block'

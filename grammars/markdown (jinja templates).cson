@@ -1,3 +1,7 @@
+# Adapted from https://github.com/danielchatfield/atom-jinja2/blob/master/grammars/markdown%20(jinja%20templates).cson
+# Summary of changes:
+# * fileTypes edited so that it is the default for md files
+
 'fileTypes': [
   'md'
 ]
