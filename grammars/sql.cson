@@ -1,18 +1,14 @@
-'scopeName': 'source.sql'
-'name': 'SQL'
+'scopeName': 'source.sql.jinja'
+'name': 'SQL (Jinja Templates)'
 'fileTypes': [
-  'ddl'
-  'dml'
-  'dsql'
-  'hql'
-  'pgsql'
-  'psql'
-  'q'
   'sql'
 ]
 'patterns': [
   {
     'include': '#comments'
+  }
+  {
+    'include': 'source.jinja'
   }
   {
     'captures':
