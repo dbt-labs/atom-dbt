@@ -9,5 +9,5 @@ Provides syntax highlighting and a number of snippets for dbt-flavored SQL, YAML
 
 ## Usage
 * Highlighting: SQL, YAML and Markdown files will be highlighted automatically
-* Snippets: To use snippets, type one of the prefixes (e.g. `macro`) macro, and then `tab`.
+* Snippets: To use snippets, type one of the prefixes (e.g. `macro`), and then `tab`.
 * Commenting: This package overrides the default comment behavior of each language to instead use Jinja comments. Use `Cmd + /` to comment out code.
