@@ -14,19 +14,16 @@
     'body': '{{ $0 }}'
   'Config':
     'prefix': 'config'
-    'body': '{{\n\tconfig(\n\t\tmaterialized="${1:table}"\n\t)\n}}'
+    'body': "{\n\tconfig(\n\t\tmaterialized='${1:table}'\n\t)\n}}"
   'Config Incremental':
     'prefix': 'config_incremental'
-    'body': '{{\n\tconfig(\n\t\tmaterialized="incremental",\n\t\tsql_where="true",\n\t\tunique_key="${1:id}"\n\t)\n}}'
+    'body': "{{\n\tconfig(\n\t\tmaterialized='incremental',\n\t\tsql_where='true',\n\t\tunique_key='${1:id}'\n\t)\n}}"
   'Docs':
     'prefix': 'docs'
     'body': '{% docs ${1:name} %}\n\t$2\n{% enddocs %}'
   'Env Var':
     'prefix': 'env_var'
     'body': "{{ env_var('${1:env_var_name}') }}"
-  'Extends':
-    'prefix': 'extends'
-    'body': '{% extends ${1:"${2:template}"} %}'
   'Filter':
     'prefix': 'filter'
     'body': '{% filter ${1:filter} %}\n\t$2\n{% endfilter %}'
