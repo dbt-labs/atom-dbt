@@ -6,18 +6,24 @@
   'Block':
     'prefix': 'block'
     'body': '{% block ${1:name} %}\n\t$2\n{% endblock %}'
-  'Docs':
-    'prefix': 'docs'
-    'body': '{% docs ${1:name} %}\n\t$2\n{% enddocs %}'
   'Complete Block':
     'prefix': '{%'
     'body': '{% $0 %}'
   'Complete Variable':
     'prefix': '{{'
     'body': '{{ $0 }}'
-  'Extends':
-    'prefix': 'extends'
-    'body': '{% extends ${1:"${2:template}"} %}'
+  'Config':
+    'prefix': 'config'
+    'body': "{\n\tconfig(\n\t\tmaterialized='${1:table}'\n\t)\n}}"
+  'Config Incremental':
+    'prefix': 'config_incremental'
+    'body': "{{\n\tconfig(\n\t\tmaterialized='incremental',\n\t\tsql_where='true',\n\t\tunique_key='${1:id}'\n\t)\n}}"
+  'Docs':
+    'prefix': 'docs'
+    'body': '{% docs ${1:name} %}\n\t$2\n{% enddocs %}'
+  'Env Var':
+    'prefix': 'env_var'
+    'body': "{{ env_var('${1:env_var_name}') }}"
   'Filter':
     'prefix': 'filter'
     'body': '{% filter ${1:filter} %}\n\t$2\n{% endfilter %}'
@@ -27,12 +33,18 @@
   'If':
     'prefix': 'if'
     'body': '{% if ${1:expr} %}\n\t$2\n{% endif %}'
+  'Load Result':
+    'prefix': 'load'
+    'body': "load_result('${1:statement_name}')"
   'Log':
     'prefix': 'log'
     'body': '{{ log(${1:var}, info=${2:True}) }}'
   'Macro':
     'prefix': 'macro'
     'body': '{% macro ${1:name}(${2:args}) %}\n\t$3\n{% endmacro %}'
+  'Return':
+    'prefix': 'return'
+    'body': '{{ return(${1}) }}'
   'Set':
     'prefix': 'set'
     'body': '{% set ${1:var}=${2:value} %}'
@@ -41,7 +53,10 @@
     'body': '{% set ${1:name} %}\n\t$2\n{% endset %}'
   'Statement':
     'prefix': 'statement'
-    'body': '{% call statement(${2:name}, fetch_result=${2:True}) %}\n\t$3\n{% endcall %}'
+    'body': '{% call statement(${2:name}, fetch_result=${2:True}) %}\n\t${3:select 1}\n{% endcall %}'
   'Ref':
     'prefix': 'ref'
     'body': "{{ ref('${1:model_name}') }}"
+  'Var':
+    'prefix': 'var'
+    'body': "{{ var('${1:var_name}') }}"
