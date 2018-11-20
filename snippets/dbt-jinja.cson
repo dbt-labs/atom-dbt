@@ -2,7 +2,7 @@
 # Summary of changes:
 # * dbt-specific snippets added.
 
-'.source.jinja, .text.html.jinja, .text.generic-config.jinja, .source.python.jinja, .source.shell.jinja, .text.xml.jinja, .source.yaml.jinja, .source.sql.jinja':
+'.source.jinja':
   'Block':
     'prefix': 'block'
     'body': '{% block ${1:name} %}\n\t$2\n{% endblock %}'
@@ -12,15 +12,6 @@
   'Complete Variable':
     'prefix': '{{'
     'body': '{{ $0 }}'
-  'Config':
-    'prefix': 'config'
-    'body': "{{\n\tconfig(\n\t\tmaterialized='${1:table}'\n\t)\n}}"
-  'Config Incremental':
-    'prefix': 'config_incremental'
-    'body': "{{\n\tconfig(\n\t\tmaterialized='incremental',\n\t\tsql_where='true',\n\t\tunique_key='${1:id}'\n\t)\n}}"
-  'Docs':
-    'prefix': 'docs'
-    'body': '{% docs ${1:name} %}\n\t$2\n{% enddocs %}'
   'Env Var':
     'prefix': 'env_var'
     'body': "{{ env_var('${1:env_var_name}') }}"
@@ -33,12 +24,6 @@
   'If':
     'prefix': 'if'
     'body': '{% if ${1:expr} %}\n\t$2\n{% endif %}'
-  'Load Result':
-    'prefix': 'load'
-    'body': "load_result('${1:statement_name}')"
-  'Log':
-    'prefix': 'log'
-    'body': '{{ log(${1:var}, info=${2:True}) }}'
   'Macro':
     'prefix': 'macro'
     'body': '{% macro ${1:name}(${2:args}) %}\n\t$3\n{% endmacro %}'
@@ -51,12 +36,3 @@
   'Set Block':
     'prefix': 'set_block'
     'body': '{% set ${1:name} %}\n\t$2\n{% endset %}'
-  'Statement':
-    'prefix': 'statement'
-    'body': '{% call statement(${2:name}, fetch_result=${2:True}) %}\n\t${3:select 1}\n{% endcall %}'
-  'Ref':
-    'prefix': 'ref'
-    'body': "{{ ref('${1:model_name}') }}"
-  'Var':
-    'prefix': 'var'
-    'body': "{{ var('${1:var_name}') }}"
