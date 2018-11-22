@@ -1,6 +1,4 @@
 # Adapted from https://github.com/danielchatfield/atom-jinja2/blob/master/snippets/atom-jinja2.cson
-# Summary of changes:
-# * dbt-specific snippets added.
 
 '.source.jinja':
   'Block':
