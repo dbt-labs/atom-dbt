@@ -4,7 +4,10 @@
     'body': '- name: ${1:col_name}\n\tdescription: ${2:col_description}\n\ttests:\n\t\t- ${3:test_name}\n'
   'Doc':
     'prefix': 'doc'
-    'body': '{{ doc("${1:doc_name}") }}'
+    'body': '''{{ doc("${1:doc_name}") }}'''
+  'Env Var':
+    'prefix': 'env_var'
+    'body': '\'{{ env_var("${1:env_var_name}") }}\''
   'Schema':
     'prefix': 'schema'
     'body': 'version: 2\n\nmodels:\n\t- name: ${1:model_name}\n\t\tdescription: ${2:description}\n\t\tcolumns:'

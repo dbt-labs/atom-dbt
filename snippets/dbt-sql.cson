@@ -5,6 +5,9 @@
   'Config Incremental':
     'prefix': 'config_incremental'
     'body': "{{\n\tconfig(\n\t\tmaterialized='incremental',\n\t\tsql_where='true',\n\t\tunique_key='${1:id}'\n\t)\n}}"
+  'Env Var':
+    'prefix': 'env_var'
+    'body': '{{ env_var("${1:env_var_name}") }}'
   'Load Result':
     'prefix': 'load'
     'body': "load_result('${1:statement_name}')"
@@ -17,6 +20,9 @@
   'Ref':
     'prefix': 'ref'
     'body': "{{ ref('${1:model_name}') }}"
+  'Return':
+    'prefix': 'return'
+    'body': '{{ return(${1}) }}'
   'Var':
     'prefix': 'var'
     'body': "{{ var('${1:var_name}') }}"

@@ -12,9 +12,6 @@
   'Complete Variable':
     'prefix': '{{'
     'body': '{{ $0 }}'
-  'Env Var':
-    'prefix': 'env_var'
-    'body': "{{ env_var('${1:env_var_name}') }}"
   'Filter':
     'prefix': 'filter'
     'body': '{% filter ${1:filter} %}\n\t$2\n{% endfilter %}'
@@ -27,9 +24,6 @@
   'Macro':
     'prefix': 'macro'
     'body': '{% macro ${1:name}(${2:args}) %}\n\t$3\n{% endmacro %}'
-  'Return':
-    'prefix': 'return'
-    'body': '{{ return(${1}) }}'
   'Set':
     'prefix': 'set'
     'body': '{% set ${1:var}=${2:value} %}'
