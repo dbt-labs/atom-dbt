@@ -1,6 +1,6 @@
 {
   "name": "atom-dbt",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Syntax highlighting and snippets for dbt projects.",
   "repository": "https://github.com/fishtown-analytics/atom-dbt",
   "license": "MIT",
