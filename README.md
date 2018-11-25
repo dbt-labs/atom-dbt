@@ -2,11 +2,6 @@
 
 Provides syntax highlighting and a number of snippets for dbt-flavored SQL, YAML and Markdown files in Atom.
 
-## Installation
-1. Clone this repo
-2. `cd` into the repo and run `apm link`
-3. Reload your atom window (`View > Developer > Reload Window`). If the changes do not take effect right away, try quitting and restarting your Atom editor.
-
 ## Usage
 * Highlighting: SQL, YAML and Markdown files will be highlighted automatically
 * Snippets: To use snippets, type one of the prefixes (e.g. `macro`), and then `tab`.
