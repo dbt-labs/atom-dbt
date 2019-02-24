@@ -1,4 +1,4 @@
-'.source.sql':
+'.source.sql.jinja':
   'Config':
     'prefix': 'config'
     'body': "{{\n\tconfig(\n\t\tmaterialized='${1:table}'\n\t)\n}}"

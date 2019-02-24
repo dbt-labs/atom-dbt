@@ -7,5 +7,7 @@
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "atom-jinja2": "0.6.0"
+  }
 }

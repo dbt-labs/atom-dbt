@@ -1,4 +1,4 @@
-'.source.yaml':
+'.source.yaml.jinja':
   'Col':
     'prefix': 'col'
     'body': '- name: ${1:col_name}\n\tdescription: ${2:col_description}\n\ttests:\n\t\t- ${3:test_name}\n'
