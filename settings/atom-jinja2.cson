@@ -1,9 +1,5 @@
 # Directly from https://github.com/danielchatfield/atom-jinja2/blob/master/settings/atom-jinja2.cson
-
 '.source.jinja':
   'editor':
     'commentStart': '{# '
     'commentEnd': ' #}'
-'.source.yaml':
-  'editor':
-    'tabLength': 2
