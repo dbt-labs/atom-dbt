@@ -11,3 +11,6 @@
   'Schema':
     'prefix': 'schema'
     'body': 'version: 2\n\nmodels:\n\t- name: ${1:model_name}\n\t\tdescription: ${2:description}\n\t\tcolumns:'
+  'Sources':
+    'prefix': 'sources'
+    'body': 'sources:\n\t- name: ${1:source_name}\n\t\ttables:\n\t\t\t- name: ${2:table_name}
