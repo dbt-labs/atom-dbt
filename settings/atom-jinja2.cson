@@ -4,3 +4,6 @@
   'editor':
     'commentStart': '{# '
     'commentEnd': ' #}'
+'.source.yaml':
+  'editor':
+    'tabLength': 2
