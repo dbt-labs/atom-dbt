@@ -28,4 +28,4 @@
     'body': "{{ var('${1:var_name}') }}"
   'Source':
     'prefix': 'source'
-    'body': "{{ source('${1:source}','${2:table_name}') }}"
+    'body': "{{ source('${1:source}', '${2:table_name}') }}"
