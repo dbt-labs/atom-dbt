@@ -4,7 +4,7 @@
     'body': "{{\n\tconfig(\n\t\tmaterialized='${1:table}'\n\t)\n}}"
   'Config Incremental':
     'prefix': 'config_incremental'
-    'body': "{{\n\tconfig(\n\t\tmaterialized='incremental',\n\t\tsql_where='true',\n\t\tunique_key='${1:id}'\n\t)\n}}"
+    'body': "{{\n\tconfig(\n\t\tmaterialized='incremental',\n\t\tunique_key='${1:id}'\n\t)\n}}"
   'Env Var':
     'prefix': 'env_var'
     'body': '{{ env_var("${1:env_var_name}") }}'
