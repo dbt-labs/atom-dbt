@@ -1,4 +1,4 @@
-'.source.markdown':
+'.source.gfm':
   'Docs':
     'prefix': 'docs'
     'body': '{% docs ${1:name} %}\n\t$2\n{% enddocs %}'
