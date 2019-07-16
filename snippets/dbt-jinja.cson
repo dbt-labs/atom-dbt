@@ -10,6 +10,9 @@
   'Complete Variable':
     'prefix': '{{'
     'body': '{{ $0 }}'
+  'Do':
+    'prefix': 'do'
+    'body': '{% do $0 %}'
   'Filter':
     'prefix': 'filter'
     'body': '{% filter ${1:filter} %}\n\t$2\n{% endfilter %}'
